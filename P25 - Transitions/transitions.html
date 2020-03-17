@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Transitions</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+		</head>
+
+		<body>
+      
+      <a class = "btn" id = "fadeinimage">Mostrar iamgem</a><br>
+
+      <img src = "imagem/programador.jpg" id = "imagem" style = "opacity: 0;">
+
+      <a class = "btn" id = "showlist">Mostrar lista</a><br>
+
+      <ul id = "lista">
+        
+        <li style = "opacity: 0;">Opção 1</li>
+        <li style = "opacity: 0;">Opção 2</li>
+        <li style = "opacity: 0;">Opção 3</li>
+
+      </ul>
+
+	    <!-- Jquery -->
+	    <script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	    <!-- Materialize JS -->
+		  <script src = "js/materialize.js"></script>
+
+      <script>
+        
+        $("#fadeinimage").click(function(
+          {
+            Materialize.fadeInImage('#imagem');
+          }));
+
+        </script>
+
+        <script>
+          
+          $(document).ready(function()
+          {
+            Materialize.showStaggeredList('#lista');
+          });
+          
+          $("#showlist").click(function(
+          {
+            Materialize.showStaggeredList('#lista');
+          }));
+
+        </script>
+
+	</body>
+
+</html>

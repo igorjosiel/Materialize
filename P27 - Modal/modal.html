@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Modal</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+	</head>
+
+	<body>
+
+		<a href = "#teste" class = "btn modal-trigger">Abrir Modal</a>
+
+		<button data-target = "teste" class = "btn modal-trigger">Abrir modal com button</button>
+
+		<!-- modal-fixed-footer - modal com rodapé fixo -->
+		<!-- bottom-sheet - modal na horizontal e na parte inferior -->
+      
+      	<div class = "modal modal-fixed-footer" id = "teste">
+      		
+      		<div class = "modal-content">
+      			
+      			<h4 class = "light">Teste</h4>
+
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+      		</div>
+
+      		<div class = "modal-footer">
+      			
+      			<a class = "btn modal-close modal-action">Sair</a>
+
+      		</div>
+
+      	</div>
+
+	    <!-- Jquery -->
+	    <script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	    <!-- Materialize JS -->
+		<script src = "js/materialize.js"></script>
+
+		<script>
+			
+			$(document).ready(function()
+			{
+				$('.modal').modal(
+					{
+						dimissible: false,
+						complete: function()
+						{
+							alert('Closed');
+						}
+					});
+			})
+
+		</script>
+
+	</body>
+
+</html>

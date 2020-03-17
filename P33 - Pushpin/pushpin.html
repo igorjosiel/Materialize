@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Pushpin</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+	  </head>
+
+	  <body>
+
+		   <div class = "bloco red">
+       
+          <nav class = "red target">
+            
+            <div class = "nav-wrapper">
+              
+              <a href = "#" class = "brand-logo">Logo</a>
+
+              <ul id = "nav-mobile" class = "right hide-on-med-and-down">
+                
+                <li><a href = "sass.html">Sass</a></li>
+                <li><a href = "badges.html">Components</a></li>
+                <li><a href = "collapsible.html">JavaScript</a></li>
+
+              </ul>
+
+            </div>
+
+          </nav>
+
+       </div>
+
+       <div class = "bloco blue">
+       
+          <nav class = "blue">
+            
+            <div class = "nav-wrapper">
+              
+              <a href = "#" class = "brand-logo">Logo</a>
+
+              <ul id = "nav-mobile" class = "right hide-on-med-and-down">
+                
+                <li><a href = "sass.html">Sass</a></li>
+                <li><a href = "badges.html">Components</a></li>
+                <li><a href = "collapsible.html">JavaScript</a></li>
+
+              </ul>
+
+            </div>
+
+          </nav>
+
+       </div>
+
+	     <!-- Jquery -->
+	     <script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	     <!-- Materialize JS -->
+		   <script src = "js/materialize.js"></script>
+
+		   <script>
+			
+			   $(document).ready(function()
+         {
+            $('.target').pushpin(
+              {
+                  top: 0,
+                  bottom: 600,
+                  offset: 40
+              });
+         });
+
+		   </script>
+
+	  </body>
+
+</html>

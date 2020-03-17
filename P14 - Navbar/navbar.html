@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Navbar</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+		</head>
+
+		<body>
+
+			<div class = "navbar-fixed">
+				
+				<nav class = "blue darken-4 z-depth-0">
+				
+					<div class = "nav-wrapper container">
+						
+						<a href = "#" class = "brand-logo left">Logo</a>
+						<a href = "#" data-activates = "menu-mobile" class = "button-collapse right">
+							
+							<i class = "material-icons">menu</i>
+
+						</a>
+
+						<ul id = "nav-mobile" class = "right hide-on-med-and-down">
+							
+							<li class = "active"><a href = "sass.html">Sass</a></li>
+							<li><a href = "badges.html"><i class = "material-icons">refresh</i></a></li>
+							<li><a class = "dropdown-button" data-activates = "dropdown" data-beloworigin = "true" href = "collapsible.html"><i class = "material-icons">email</i>JavaScript</a></li>
+
+						</ul>
+
+					</div>
+
+				</nav>
+
+			</div>
+
+		</body>
+
+			<!-- Dropdown -->
+			<ul class = "dropdown-content" id = "dropdown">
+				
+				<li><a href = "#">Link 1</a></li>
+				<li><a href = "#">Link 2</a></li>
+				<li><a href = "#">Link 3</a></li>
+
+			</ul>
+
+			<ul id = "menu-mobile" class = "side-nav">
+							
+				<li class = "active"><a href = "sass.html">Sass</a></li>
+				<li><a href = "badges.html">Components</a></li>
+				<li><a href = "collapsible.html">JavaScript</a></li>
+
+			</ul>
+
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+			<!-- search - insere uma barra de pesquisa -->
+
+			<nav class = "blue">
+				
+				<div class = "nav-wrapper">
+					
+					<form>
+						
+						<div class = "input-field">
+							
+							<input id = "search" type = "search" required>
+
+							<label class = "label-icon" for = "search"><i class = "material-icons">search</i></label>
+
+						</div>
+
+					</form>
+
+				</div>
+
+			</nav>
+
+			<nav class = "nav-extended">
+
+    			<div class = "nav-wrapper container">
+
+      				<a href = "#" class = "brand-logo">Logo</a>
+
+      				<ul id = "nav-mobile" class = "right hide-on-med-and-down">
+
+        				<li><a href="sass.html">Sass</a></li>
+
+        				<li><a href="badges.html">Components</a></li>
+        				<li><a href = "collapsible.html">JavaScript</a></li>
+
+      				</ul>
+
+    			</div>
+
+    			<div class = "nav-content container">
+      				
+      				<ul class = "tabs tabs-transparent">
+        					
+        				<li class = "tab"><a href = "#test1">Test 1</a></li>
+        				<li class = "tab"><a class = "active" href = "#test2">Test 2</a></li>
+        				<li class = "tab disabled"><a href = "#test3">Disabled Tab</a></li>
+        				<li class = "tab"><a href = "#test4">Test 4</a></li>
+      	
+      				</ul>
+    	
+    			</div>
+  	
+  			</nav>
+
+  			<div id = "test1" class = "col s12">Test 1</div>
+  			<div id = "test2" class = "col s12">Test 2</div>
+  			<div id = "test3" class = "col s12">Test 3</div>
+  			<div id = "test4" class = "col s12">Test 4</div>
+
+			<!-- Jquery -->
+			<script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+			<!-- Materialize JS -->
+			<script src = "js/materialize.js"></script>
+
+			<script>
+				
+				//Menu mobile
+				$(".button-collapse").sideNav();
+
+			</script>
+
+		</body>
+
+	</html>

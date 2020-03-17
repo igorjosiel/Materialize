@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - SideNav</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+	  </head>
+
+	  <body>
+
+		   <ul id = "slid-out" class = "side-nav fixed">
+
+          <li>
+            
+            <div class = "user-view">
+              
+              <div class = "background">
+                
+                <img src = "imagens/programador.jpg">
+
+              </div>
+
+              <a href = ""><img class = "circle" src = "imagens/user.jpg"></a>
+              <a href = ""><span class = "white-text name">José da Silva</span></a>
+              <a href = ""><span class = "white-text email">jronaldo@gmail.com</span></a>
+
+            </div>
+
+          </li>
+       
+          <li><a class = "waves-effect" href = "#">Home</a></li>
+          <li><div class = "divider"></div></li>
+          <li><a href = "#"><i class = "material-icons">cloud</i>Produtos</a></li>
+          <li><a class = "subheader" href = "#">Contato</a></li>
+
+          <li class = "no-padding">
+            
+            <ul class = "collapsible collapsible-accordion">
+              
+              <li>
+                
+                <a class = "collapsible-header">Dropdown<i class = "materialize-icons">arrow_drop_down</i></a>
+
+                <div class = "collapsible-body">
+                  
+                  <ul>
+                    
+                    <li><a href = "#">Link 1</a></li>
+                    <li><a href = "#">Link 2</a></li>
+                    <li><a href = "#">Link 3</a></li>
+
+                  </ul>
+
+                </div>
+
+              </li>
+
+            </ul>
+
+          </li>
+
+       </ul>
+        
+       <a class = "btn hide-on-large-only" data-activates = "slide-out"><i class = "material-icons">menu</i></a>
+
+	     <!-- Jquery -->
+	     <script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	     <!-- Materialize JS -->
+		   <script src = "js/materialize.js"></script>
+
+		   <script>
+			
+			   $(document).ready(function()
+         {
+            $(".btn").sideNav
+            ({
+                menuWidth: 300,
+                edge: 'right'
+            });
+         });
+
+		   </script>
+
+	  </body>
+
+</html>

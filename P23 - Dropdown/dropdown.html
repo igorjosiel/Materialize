@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Dropdown</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+		</head>
+
+		<body>
+
+            <!-- Dropdown Trigger -->
+  			<a class = 'dropdown-trigger btn' data-beloworigin = "true" data-hover = "true" href = '#' data-target = 'dropdown1'>Drop Me!</a>
+
+  			<!-- Dropdown Structure -->
+  			<ul id = 'dropdown1' class = 'dropdown-content'>
+
+    			<li><a href = "#!">one</a></li>
+    			<li><a href = "#!">two</a></li>
+    			<li class = "divider" tabindex = "-1"></li>
+    			<li><a href = "#!">three</a></li>
+    			<li><a href = "#!"><i class = "material-icons">view_module</i>four</a></li>
+    			<li><a href = "#!"><i class = "material-icons">cloud</i>five</a></li>
+  			
+  			</ul>
+
+	        <!-- Jquery -->
+	        <script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	        <!-- Materialize JS -->
+		    <script src = "js/materialize.js"></script>
+
+		    <script>
+		    	
+		    	$('.dropdown-button').dropdown(
+		    	{
+
+		    	});
+
+		    </script>
+
+	    </body>
+
+    </html>

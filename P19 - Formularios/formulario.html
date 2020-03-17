@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Formulários</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+		</head>
+
+		<body>
+
+            <div class = "row">
+            	
+            	<form class = "col s12">
+            		
+            		<div class = "input-field col s6">
+            			
+            			<!-- prefix - alinha o ícone ao conteúdo -->
+
+            			<i class = "material-icons prefix">face</i>
+
+            			<input data-length = "40" type = "text" id = "nome" placeholder = "Seu nome">
+
+            			<label for = "nome">Nome completo</label>
+
+            		</div>
+
+            		<div class = "input-field col s6">
+
+            			<!-- validate - verifica se é válido -->
+
+            			<i class = "material-icons prefix">email</i>
+            			
+            			<input data-length = "50" type = "email" id = "email" class = "validate">
+
+            			<label data-error = "Email inválido" data-sucsses = "Email válido" for = "email">Seu email</label>
+
+            		</div>
+
+            		<div class = "input-field col s12">
+
+            			<i class = "material-icons prefix">edit_mode</i>
+            			
+            			<textarea id = "text" class = "materialize-textarea"></textarea>
+
+            			<label for = "text">Mensagem</label>
+
+            		</div>
+
+            	</form>
+
+            </div>
+
+            <div class = "row">
+            	
+            	<form = class = "col s12">
+
+            		Digite seu email
+            		
+            		<div class = "input-field inline">
+            			
+            			<input type = "email" id = "email">
+
+            			<label for = "email">Email</label>
+
+            		</div>
+
+            	</form>
+
+            </div>
+
+            <div class = "row">
+            	
+            	<form = class = "col s12">
+
+            		Digite seu email
+            		
+            		<div class = "input-field inline">
+            			
+            			<input type = "email" autocomplete = "off" id = "email">
+
+            			<label for = "email">Email</label>
+
+            		</div>
+
+            	</form>
+
+            </div>
+
+            <div class = "row">
+            	
+            	<form class = "col s12">
+
+            		<div class = "input-field col s12">
+            		
+            			<select>
+
+            				<optgroup label = "Opções 1">
+            				
+            					<option value = "1" class = "circle left" data-icon = "img/user.jpg">Opção 1></option>
+            					<option value = "2">Opção 2></option>
+            					<option value = "3">Opção 3></option>
+
+            				</optgroup>
+
+            				<optgroup label = "Opções 2">
+            				
+            					<option value = "1">Opção 1></option>
+            					<option value = "2">Opção 2></option>
+            					<option value = "3">Opção 3></option>
+
+            				</optgroup>
+
+            			</select>
+
+            			<label>Select</label>
+
+            		</div>
+
+            		<div class = "input-field col s12">
+            	
+            			<input type = "date" class = "datepicker">
+
+            		</div>
+
+            		<div class = "input-field col s12">
+            	
+            			<input type = "time" class = "timepicker">
+
+            		</div>
+
+            	</form>
+
+            </div>
+
+            <div>
+            	
+            	<form class = "col s12">
+            		
+            		<p>
+            			
+            			<input name = "times" class = "with-gap" type = "radio" id = "teste">
+
+            			<label for = "teste">Vasco</label>
+
+            		</p>
+
+            		<p>
+            			
+            			<input name = "times" disabled = "disabled" type = "radio" id = "teste2">
+
+            			<label for = "teste">Santos</label>
+
+            		</p>
+
+            		<p>
+            			
+            			<input name = "times" type = "radio" id = "teste3">
+
+            			<label for = "teste">Bahia</label>
+
+            		</p>
+
+            	</form>
+
+            	<form class = "col s12">
+            		
+            		<p>
+            			
+            			<input class = "filled-in" type = "checkbox" id = "teste">
+
+            			<label for = "teste">Vasco</label>
+
+            		</p>
+
+            		<p>
+            			
+            			<input type = "checkbox" checked id = "teste2">
+
+            			<label for = "teste">Santos</label>
+
+            		</p>
+
+            		<p>
+            			
+            			<input type = "checkbox" id = "teste3">
+
+            			<label for = "teste">Bahia</label>
+
+            		</p>
+
+            	</form>
+
+            </div>
+
+            <div class = "row">
+            	
+            	<form class = "col s12">
+            		
+            		<div class = "switch">
+            			
+            			<label>
+            				
+            				Desligado
+
+            				<input type = "checkbox">
+
+            				<span class = "lever"></span>
+
+            				Ligado
+
+            			</label>
+
+            		</div>
+
+            	</form>
+
+            </div>
+
+            <div class = "row">
+            	
+            	<form class = "col s12">
+            		
+            		<div class = "file-field input-field">
+            			
+            			<div class = "btn">
+            				
+            				<span>Upload</span>
+
+            				<input multiple type = "file">
+
+            			</div>
+
+            			<div class = "file-path-wrapper">
+            				
+            				<input class = "file-path validate" type = "text">
+
+            			</div>
+
+            		</div>
+
+            	</form>
+
+            </div>
+
+            <div class = "row">
+            	
+            	<form class = "col s12">
+            		
+            		<p class = "range-field">
+            			
+            			<input type = "range" id = "teste" name = "range" min = "0" max = "100">
+
+            		</p>
+
+            	</form>
+
+            </div>
+
+	       <!-- Jquery -->
+	       <script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	       <!-- Materialize JS -->
+		  <script src = "js/materialize.js"></script>
+
+		  <script>
+		  	
+		  	$(document).ready(function()
+		  	{
+		  		$('#email').autocomplete(
+		  		{
+		  			data:
+		  			{
+		  				"rodrigo@gmail.com": null;
+		  				"roberto@gmail.com": null;
+		  				"carlos@hotmail.com": 'https://placehold.it/250x250'
+		  			},
+
+		  			limit: 20,
+
+		  			onAutoComplete: function(val)
+		  			{
+		  				alert("email selecionado");
+		  			},
+
+		  			minLength: 1,
+
+		  		});
+		  	});
+
+		  </script>
+
+		  <script>
+
+		  	$(document).ready(function()
+		  	{
+
+		  		// SELECT
+		  		$('select').material_select();
+
+		  		//DATEPICKER
+		  		$('.datepicker').pickadate(
+		  		{
+		  			selectMonths: true,
+
+		  			selectYears: 15
+		  		});
+
+		  		// TIMEPICKER
+		  		$('.timepicker').pickadate(
+		  		{
+		  			default: 'now',
+		  			fromnow: 0,
+		  			twelvehour: false,
+		  			doneText: 'OK',
+		  			clearText: 'Clear',
+		  			cancelText: 'Cancel',
+		  			autoclose: false,
+		  			ampmclickable: true,
+
+		  			aftershow: function()
+		  			{
+
+		  			}
+		  		});
+
+		  	});
+
+		  </script>
+
+	</body>
+
+</html>

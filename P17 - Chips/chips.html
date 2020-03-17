@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Chips</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+		</head>
+
+		<body>
+
+      <!-- chip - para representar contatos ou tags -->
+			
+      <div class = "chip">
+        
+        <img src = "imagens/user.png">
+
+        Alana Souza
+
+      </div>
+
+      <div class = "chip">
+        
+        Alana Souza
+
+        <i class = "material-icons"></i>
+
+      </div>
+
+      <div class = "chips">
+      	
+      	<button>Mostrar dados</button>
+
+      </div>
+
+	<!-- Jquery -->
+	<script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	<!-- Materialize JS -->
+		<script src = "js/materialize.js"></script>
+
+    <script>
+        
+        $('.chips').material_chip();
+
+        $('.chips').on('chip.add', function(e, chip)
+        {
+        	alert("tag adicionada");
+        });
+
+        $('.chips').on('chip.delete', function(e, chip)
+        {
+        	alert("tag removida");
+        });
+
+        $('.chips').on('chip.select', function(e, chip)
+        {
+        	alert("tag selecionada");
+        });
+
+    </script>
+
+    <script>
+      	
+      	$(document).ready(function())
+        {
+        	// chips
+        	$('.chips').material_chip(
+        		{
+
+        			// tag iniciais pré-definidas
+        			data: [
+        				{tag: 'HTML', image: '', id: 1},
+        				{tag: 'CSS'},
+        				{tag: 'PHP'}
+        			],
+
+        			// placeholder
+        			placeholder: 'Digite uma tag',
+        			secondaryPlaceholder: '+ Tag',
+
+        			// autocomplete
+        			autocompleteData:
+        			{
+        				'Javascript': null,
+        				'Jquery': null,
+        				'CSS': null
+        			},
+
+        			// limite do autocomplete
+        			autocompleteLimit: 2
+        		});
+
+        		// exibindo dados
+        		$('button').click(function()
+        		{
+        			var dados = $('.chips').material_chip('data');
+
+        			console.log(dados);
+        		})
+        	}
+
+    	</script>
+
+	</body>
+
+</html>

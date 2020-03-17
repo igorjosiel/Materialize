@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			
+			<meta charset = "utf-8">
+
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+			<title>Materialize - Media</title>
+
+			<!-- Import Google Icon Font -->
+			<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+			<!-- Materialize CSS -->
+			<link rel = "stylesheet" href = "css/materialize.css">
+
+			<link rel = "stylesheet" href = "css/custom.css">
+
+		</head>
+
+		<body>
+
+			<img class = "material-boxed" src = "imagens/programador.jpg" data-caption = "Olá mundo" width = "300">
+
+			<!-- fullscreen - ocupa a tela toda -->
+
+			<div class = "slider fullscreen">
+    	
+    			<ul class = "slides">
+      
+      				<li>
+        
+        				<img src = "https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        
+        				<div class = "caption center-align">
+          
+          					<h3>This is our big Tagline!</h3>
+          
+          					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        	
+        				</div>
+      
+      				</li>
+
+      				<li>
+        
+        				<img src = "https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        
+        				<div class = "caption left-align">
+          
+          					<h3>Left Aligned Caption</h3>
+          
+          					<h5 class = "light grey-text text-lighten-3">Here's our small slogan.</h5>
+        
+        				</div>
+      
+      				</li>
+      
+      				<li>
+        
+        				<img src = "https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        
+        				<div class = "caption right-align">
+          
+          					<h3>Right Aligned Caption</h3>
+          
+          					<h5 class = "light grey-text text-lighten-3">Here's our small slogan.</h5>
+        
+        				</div>
+      
+      				</li>
+      	
+      				<li>
+        
+        				<img src = "https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        	
+        				<div class = "caption center-align">
+          	
+          					<h3>This is our big Tagline!</h3>
+          
+          					<h5 class = "light grey-text text-lighten-3">Here's our small slogan.</h5>
+        
+        				</div>
+      	
+      				</li>
+    
+    			</ul>
+  			
+  			</div>
+
+	        <!-- Jquery -->
+	        <script src = "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+			
+	        <!-- Materialize JS -->
+		    <script src = "js/materialize.js"></script>
+
+		    <script>
+		    	
+		    	$(document).ready(function()
+		    		{
+		    			$('.materialboxed').materialbox();
+		    		});
+
+		    </script>
+
+		    <script>
+		    	
+		    	$(document).ready(function()
+		    		{
+		    			$('.slider').slider();
+		    		});
+
+		    </script>
+
+	    </body>
+
+    </html>
